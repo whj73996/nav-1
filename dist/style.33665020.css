@@ -1,0 +1,165 @@
+body{
+  background-color:#eee ;
+}
+.globalHeader{
+  /* border: 1px red solid; */
+  margin: 20px;
+
+}
+.searchForm{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width:500px){
+  .searchForm{
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.searchForm>input{
+  height: 40px;
+  width: 100%;
+  border: 1px black solid;
+  padding: 0 20px ;
+  border: none;
+  border-radius:20px;
+  font-size: 16px;
+}
+.searchForm>button{
+  margin-right: -70px;
+  height: 40px;
+  position: relative;
+  left: -70px;
+  white-space: nowrap;
+  margin-left: 10px;
+  padding: 0 15px ;
+  border-radius:20px;
+  border: none;
+  background: rgba(55, 131, 220, 0.85);
+  color: #fff;
+  font-size: 16px;
+}
+.globalMain{
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fu{margin: 0 20px;}
+.siteList{
+  /* border: 1px black solid; */
+  margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-right: -16px; */
+  /* padding-right:-16px ; */
+  /* justify-content: space-between; */
+}
+
+.siteList>li{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+@media (min-width:500px){
+
+.siteList .site > .close{
+  display: none;
+}
+
+.globalMain{
+margin-top: 64px;
+}
+  .siteList>li{
+  margin-right: 54px;
+  margin-bottom: 32px;
+}
+.siteList{
+  margin-right: -64px;
+}
+}
+@media (max-width:500px){
+
+/* .globalMain{
+margin-top: 64px;
+} */
+  .siteList>li{
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+.siteList{
+  margin-right: -15px;
+}
+}
+
+.siteList .site{
+  /* border: 1px red solid; */
+  width: 100px;
+  /* height: 108px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 18px;
+  padding-bottom: 5px;
+  padding-top: 14px;
+  position: relative;
+}
+.siteList .site > .close{
+  position: absolute;
+  height: 25px;
+  top: 0;
+  right:-10px;
+  /* display: none; */
+  cursor: default;
+}
+.siteList .site:hover > .close{
+  display: block;
+}
+
+.siteList .site > .logo{
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+.siteList .site>.link{
+  height: 17px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  line-height: 17px;
+  margin-top: 2px;
+}
+
+.siteList .last{
+  align-self: center;
+}
+
+.siteList .addButton .icon{
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 72px;
+}
+.siteList .addButton{
+  width: 100px;
+  /* height: 108px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 10px;
+  border-radius: 18px;
+  padding-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.33665020.css.map */
