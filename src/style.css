@@ -62,12 +62,37 @@ body{
 .siteList>li{
   margin-right: 10px;
   margin-bottom: 10px;
+  background: transparent;
   cursor: pointer;
-}
-@media (min-width:500px){
+  /* box-shadow: -10px 15px 10px rgba(0,0,0,.2); */
+  transition:all 1s;
+  transition:border 0.5s;
 
+}
+
+
+/* .siteList>li:hover{
+  
+} */
+
+@media (min-width:500px){
+  .siteList>li{
+  transition:all 0.2s;
+  border:transparent 4px solid;
+  }
+.siteList>li:hover{
+  /* position: relative;
+  top: -8px;
+  right: -8px; */
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: -10px 15px 10px rgba(0,0,0,.2);
+  border: rgba(82,146,222,0.3) 4px solid;
+}
 .siteList .site > .close{
   display: none;
+}
+.siteList .site:hover > .close{
+  display: block;
 }
 
 .globalMain{
@@ -76,9 +101,10 @@ margin-top: 64px;
   .siteList>li{
   margin-right: 54px;
   margin-bottom: 32px;
+  border-radius: 18px;
 }
 .siteList{
-  margin-right: -64px;
+  margin-right: -72px;
 }
 }
 @media (max-width:500px){
@@ -90,6 +116,8 @@ margin-top: 64px;
   margin-right: 15px;
   margin-bottom: 12px;
 }
+
+
 .siteList{
   margin-right: -15px;
 }
@@ -112,14 +140,14 @@ margin-top: 64px;
 .siteList .site > .close{
   position: absolute;
   height: 25px;
-  top: 0;
-  right:-10px;
+  top: -8px;
+  right:-14px;
   /* display: none; */
   cursor: default;
+  z-index: 1;
 }
-.siteList .site:hover > .close{
-  display: block;
-}
+
+
 
 .siteList .site > .logo{
   height: 72px;
