@@ -17,11 +17,25 @@ const hashMap = xObject || [
     logo: "G",
     url: "https://www.google.com",
   },
+  {
+    logo: "T",
+    url: "https://www.taobao.com/",
+  },
+  {
+    logo: "I",
+    url: "https://www.iqiyi.com/",
+  },
+  {
+    logo: "Q",
+    url: "https://www.qq.com/",
+  },
+  {
+    logo: "S",
+    url: "https://www.sina.com.cn/",
+  },
 ];
 
 const simplifyUrl = (url) => {
-  console.log(url);
-
   return url.replace("https://","")
             .replace("http://","")
     .replace("www.", "")
